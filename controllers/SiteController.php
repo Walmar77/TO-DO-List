@@ -23,7 +23,7 @@ class SiteController extends Controller
 
     public function actionHello() {
 
-        $var = 'Моя страница';
+        $var = 'Список задач';
         $array = MyList::getAll();
 
         return $this->render('hello', ['varInView' => $var,
