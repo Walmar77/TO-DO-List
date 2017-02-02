@@ -3,7 +3,7 @@
 <table class="table">
 	<thead>
 		<tr>
-			<td>#</td>
+			<td>№</td>
 			<td>Название</td>
 			<td>Действия</td>
 		</tr>

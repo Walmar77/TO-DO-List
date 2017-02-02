@@ -45,6 +45,6 @@ class DefaultController extends Controller {
 	public function actionDelete() {
 		$model = MyList::getOne();
 		$model->delete();
-		return $this->redirect(['index'];)
+		return $this->redirect(['index']);
 	}
 }
