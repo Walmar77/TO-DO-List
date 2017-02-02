@@ -5,6 +5,12 @@ use yii\db\ActiveRecord;
 
 class MyList extends ActiveRecord {
 
+	public function rules() {
+		return [
+		[['title', 'discription'], 'required'],
+		];
+	}
+
 	public static function tableName() {
 		return 'list';
 	}
