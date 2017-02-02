@@ -39,12 +39,19 @@ $config = [
         ],
         'db' => require(__DIR__ . '/db.php'),
         
+        'modules' => [
+            'admin' => [
+                'class' => 'app\modules\admin\Module',
+            ],
+        ],
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
                 '<action>' => 'site/<action>',
                 'view/<id:\d+>' => 'site/view',
+                '<module:\w+>/<controller:\w+>/<action:\w+>/<id:\d+>' => '<module>/<controller>/<action>',
             ],
         ],
         
