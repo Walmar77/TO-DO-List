@@ -5,6 +5,7 @@ namespace app\modules\admin\controllers;
 use yii;
 use yii\web\Controller;
 use app\models\MyList;
+use yii\web\NotFoundHttpException;
 
 class DefaultController extends Controller {
 

@@ -52,6 +52,7 @@ $config = [
                 '<module:\w+>/<controller:\w+>/<action:\w+>/<id:\d+>' => '<module>/<controller>/<action>',
                 '<action>' => 'site/<action>',
                 'view/<id:\d+>' => 'site/view',
+                '<module>/<controller>/<action:(create|update|delete)>/<id:d+>' => '<module>/<controller>/<action>',
             ],
         ],
         

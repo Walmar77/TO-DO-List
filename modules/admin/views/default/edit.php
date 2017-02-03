@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 		<?= $form->field($one, 'title')->textInput() ?>
 	</div>
 	<div class="col-md-6">
-		<?= $form->field($one, 'discription')->textInput ?>
+		<?= $form->field($one, 'discription')->textInput() ?>
 	</div>
 	<div class="col-md-12">
 		<?= Html::submitButton('Изменить', ['class' => 'btn btn-success']) ?>
