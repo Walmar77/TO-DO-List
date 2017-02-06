@@ -1,5 +1,5 @@
 <h1>Админка</h1>
-<a href="<?= yii\helpers\Url::to('admin/default/create')?>" class="btn btn-primary">Создать</a>
+<a href="<?= yii\helpers\Url::to(['default/create'])?>" class="btn btn-primary">Создать</a>
 <table class="table">
 	<thead>
 		<tr>
