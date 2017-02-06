@@ -15,9 +15,9 @@
 				<td><?= $item->id ?></td>
 				<td><?= $item->title ?></td>
 				<td>
-					<a href="<?= yii\helpers\Url::to(['admin/default/edit', 'id' => $item->id])?>">Редактировать</a>
+					<a href="<?= yii\helpers\Url::to(['default/edit', 'id' => $item->id])?>">Редактировать</a>
 					|
-					<a href="<?= yii\helpers\Url::to(['admin/default/delete', 'id' => $item->id])?>">Удалить</a>
+					<a href="<?= yii\helpers\Url::to(['default/delete', 'id' => $item->id])?>">Удалить</a>
 				</td>
 			</tr>
 		<?php endforeach ?>

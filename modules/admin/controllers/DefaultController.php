@@ -43,8 +43,8 @@ class DefaultController extends Controller {
 		return $this->render('create', ['model' => $model]);
 	}
 
-	public function actionDelete() {
-		$model = MyList::getOne();
+	public function actionDelete($id) {
+		$model = MyList::getOne($id);
 		$model->delete();
 		return $this->redirect(['index']);
 	}
